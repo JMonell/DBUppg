@@ -1,0 +1,24 @@
+--------
+ER-Model:
+
+Book:
+(PK) int ID not null,
+varchar(64) Title not null,
+varchar(32) publisher not null,
+Bool IsAvailable not null
+
+Author:
+(PK) int ID not null,
+varchar(32) FirstName  not null,
+varchar(32) LastName not null,
+
+BookAuthor:
+(PK) int ID not null,
+(FK) int BookID not null,
+(FK) int AuthorID not null
+
+Loan:
+(Pk) int LoanID not null,
+varchar(64) BorrowerName not null,
+varchar(64) BorrowerPhoneNumber not null
+
