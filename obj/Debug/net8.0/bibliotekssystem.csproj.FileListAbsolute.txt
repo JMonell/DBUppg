@@ -1,0 +1,14 @@
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\bin\Debug\net8.0\bibliotekssystem.exe
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\bin\Debug\net8.0\bibliotekssystem.deps.json
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\bin\Debug\net8.0\bibliotekssystem.runtimeconfig.json
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\bin\Debug\net8.0\bibliotekssystem.dll
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\bin\Debug\net8.0\bibliotekssystem.pdb
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\obj\Debug\net8.0\bibliotekssystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\obj\Debug\net8.0\bibliotekssystem.AssemblyInfoInputs.cache
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\obj\Debug\net8.0\bibliotekssystem.AssemblyInfo.cs
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\obj\Debug\net8.0\bibliotekssystem.csproj.CoreCompileInputs.cache
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\obj\Debug\net8.0\bibliotekssystem.dll
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\obj\Debug\net8.0\refint\bibliotekssystem.dll
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\obj\Debug\net8.0\bibliotekssystem.pdb
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\obj\Debug\net8.0\bibliotekssystem.genruntimeconfig.cache
+C:\Users\joarm\development\projects\DAB\myDabRepos\bibliotekssystem\obj\Debug\net8.0\ref\bibliotekssystem.dll
