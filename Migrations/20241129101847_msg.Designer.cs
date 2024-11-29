@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace bibliotekssystem.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241129100059_msg")]
+    [Migration("20241129101847_msg")]
     partial class msg
     {
         /// <inheritdoc />
