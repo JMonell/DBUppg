@@ -8,6 +8,9 @@ class Program
     {
         Console.WriteLine("Hello, World!");
         Seed.Run(); // if there are no data, add data to the database
+        System.Console.WriteLine("Done!");
+
+        
 
     }
 }
