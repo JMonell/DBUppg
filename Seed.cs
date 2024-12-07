@@ -76,6 +76,18 @@ public class Seed{
                     };
                     context.BookAuthors.AddRange(bookAuthors);  // Relationships added
                     context.SaveChanges();
+
+                    var loan = new Loan {
+                        BorrowerName = "John Smith",
+                        BorrowerPhoneNumber = "0761234567",
+                        BookId = 1,
+                        LoanDate = DateTime.Now,
+                        ReturnDate = DateTime.Now.AddDays(+10)
+                    };
+                    context.Loans.AddRange(loan);  // loan added
+                    context.SaveChanges();
+
+
                     transaction.Commit();
                     System.Console.WriteLine("Saved changes.");  
                 }else{  
