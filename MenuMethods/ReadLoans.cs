@@ -8,7 +8,7 @@ public class ReadLoans{
 
             var loans = context.Loans.Include(l => l.Book).ToList();
                 foreach (var l in loans){
-                    System.Console.WriteLine($"{l.Id} - Book: {l.Book.Title} - Borrower: {l.BorrowerName} - Date: {l.LoanDate.ToString("yyyy-MM-dd")} returnDate: {l.ReturnDate?.ToString("yyyy-MM-dd")}");
+                    System.Console.WriteLine($"Id: {l.Id} - Book: {l.Book.Title} - Borrower: {l.BorrowerName} - Date: {l.LoanDate.ToString("yyyy-MM-dd")} returnDate: {l.ReturnDate?.ToString("yyyy-MM-dd")}");
                 }
         }
      }
