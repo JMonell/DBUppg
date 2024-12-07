@@ -12,8 +12,7 @@ public class RemoveBook{
                 
                 System.Console.Write("\nEnter an book id to delete: ");
                 
-                if (!int.TryParse(Console.ReadLine(), out var bookId))
-                {
+                if (!int.TryParse(Console.ReadLine(), out var bookId)){
                     System.Console.WriteLine("\nInvalid ID format. Please enter a valid numeric ID.");
                     Console.ResetColor();
                     continue;
@@ -21,8 +20,7 @@ public class RemoveBook{
 
                 var bookToRemove = context.Books.Find(bookId);
 
-                if (bookToRemove == null)
-                {
+                if (bookToRemove == null){
                     System.Console.WriteLine("\nBook ID not found. Please try again.");
                     Console.ResetColor();
                     continue;
@@ -32,8 +30,7 @@ public class RemoveBook{
                 Console.ResetColor();
                 
                 var confirmation = Console.ReadLine()?.Trim().ToLower();
-                if (confirmation != "yes")
-                {
+                if (confirmation != "yes"){
                     System.Console.WriteLine("\nDeletion cancelled. Returning to menu.");
                     return;
                 }

@@ -14,8 +14,7 @@ public class RemoveLoan{
                 System.Console.Write("\nEnter an loan id to delete: ");
                 
                 // Validate user input.
-                if (!int.TryParse(Console.ReadLine(), out var loanId))
-                {
+                if (!int.TryParse(Console.ReadLine(), out var loanId)){
                     System.Console.WriteLine("\nInvalid ID format. Please enter a valid numeric ID.");
                     Console.ResetColor();
                     continue;
@@ -23,8 +22,7 @@ public class RemoveLoan{
 
                 var loanToRemove = context.Loans.Find(loanId);
 
-                if (loanToRemove == null)
-                {
+                if (loanToRemove == null){
                     System.Console.WriteLine("\nLoan ID not found. Please try again.");
                     Console.ResetColor();
                     continue;
@@ -34,8 +32,7 @@ public class RemoveLoan{
                 Console.ResetColor();
                 
                 var confirmation = Console.ReadLine()?.Trim().ToLower();
-                if (confirmation != "yes")
-                {
+                if (confirmation != "yes"){
                     System.Console.WriteLine("\nDeletion cancelled. Returning to menu.");
                     return;
                 }

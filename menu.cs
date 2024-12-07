@@ -55,12 +55,12 @@ public class Menu{
                 MenuMethods.AddBook.Run();
                 break;
             case 3:
-                Console.WriteLine("AddBookToAuthor selected.");
-                MenuMethods.AddBookToAuthor.Run();
-                break;
-            case 4:
                 Console.WriteLine("AddLoan selected.");
                 MenuMethods.AddLoan.Run();
+                break;
+            case 4:
+                Console.WriteLine("AddBookToAuthor selected.");
+                MenuMethods.AddBookToAuthor.Run();
                 break;
             case 5:
                 Console.WriteLine("RemoveAuthor selected.");
@@ -76,11 +76,11 @@ public class Menu{
                 break;
             case 8:
                 Console.WriteLine("UpdateAuthor selected.");
-                // Add logic for UpdateBook
+                MenuMethods.UpdateAuthor.Run();
                 break;
             case 9:
                 Console.WriteLine("UpdateBook selected.");
-                // Add logic for UpdateAuthor
+                MenuMethods.UpdateBook.Run();
                 break;
             case 10:
                 Console.WriteLine("UpdateLoan selected.");
@@ -92,15 +92,16 @@ public class Menu{
                 break;
             case 12:
                 Console.WriteLine("ReadLoans selected.");
-                // Add logic for ReadLoans
+                MenuMethods.ReadLoans.Run();
                 break;
             case 13:
                 Console.WriteLine("ReadBooksFromSpecificAuthor selected.");
-                // Add logic for ReadBooksFromSpecificAuthor
+                MenuMethods.ReadBooksFromSpecificAuthor.Run();
                 break;
             case 14:
                 Console.WriteLine("ReadAuthorsFromSpecificBook selected.");
                 // Add logic for ReadAuthorsFromSpecificBook
+                MenuMethods.ReadAuthorsFromSpecificBook.Run();
                 break;
             case 15:
                 Console.WriteLine("Quitting the program...");
