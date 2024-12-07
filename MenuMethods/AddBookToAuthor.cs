@@ -8,14 +8,24 @@ class AddBookToAuthor{
     public static void Run(){
 
         using (var context = new AppDbContext()){
-            // var AuthorsWithoutBooks = context.Authors
-            //     .Where(a => !context.Books.Any(b => b.BookAuthors.Any(ba => ba.Id == a.Id)))
-            //     .ToList();
+            var Authors = context.Authors
+                .Where(a => !context.Books.Any(b => b.BookAuthors.Any(ba => ba.Id == a.Id)))
+                .ToList();
 
 
-            // var BooksWithoutAuthors = context.Books
-            //         .Where(b => !b.BookAuthors.Any())
-            //         .ToList();
+            var Books = context.Books
+                    .Where(b => !b.BookAuthors.Any(a => b.BookAuthors.Any(ba => ba.Id == b.Id)))
+                    .ToList();
+
+            foreach(var b in Books){
+                System.Console.WriteLine($"{b.Id} - {b.Title}");
+            }
+            System.Console.WriteLine();
+
+            foreach(var a in Authors){
+                System.Console.WriteLine($"{a.Id} - {a.FirstName} {a.LastName}");
+            }
+
 
 
             System.Console.WriteLine("Add a connection between book and author (must use id from both):");

@@ -14,13 +14,6 @@ public class ReadBooksAndAuthors{
                     .ThenInclude(a => a.Author)
                     .ToList();
             
-            // var AuthorsWithoutBooks = context.Authors
-            //         .Where(a => !a.BookAuthors.Any())
-            //         .ToList();
-
-            // var BooksWithoutAuthors = context.Books
-            //         .Where(b => !b.BookAuthors.Any())
-            //         .ToList();
 
             foreach (var book in BookAuthor){
                 foreach (var author in book.BookAuthors){

@@ -18,9 +18,9 @@ public class Menu{
         //crud
         System.Console.WriteLine(
 @"
-1  - AddAuthor               2 - AddBook          3 - AddBookToAuthor                 4 - AddLoan
+1  - AddAuthor               2 - AddBook          3 - AddLoan                         4 - AddBookToAuthor
 5  - RemoveAuthor            6 - RemoveBook       7 - RemoveLoan
-8  - UpdateBook              9 - UpdateAuthor    10 - UpdateLoan
+8  - UpdateAuthor            9 - UpdateBook      10 - UpdateLoan
 11 - ReadBooksAndAuthors    12 - ReadLoans       13 - ReadBooksFromSpecificAuthor    14 - ReadAuthorsFromSpecificBook
 15 - Quit");    
 
@@ -60,31 +60,31 @@ public class Menu{
                 break;
             case 4:
                 Console.WriteLine("AddLoan selected.");
-                // Add logic for AddLoan
+                MenuMethods.AddLoan.Run();
                 break;
             case 5:
                 Console.WriteLine("RemoveAuthor selected.");
-                // Add logic for RemoveAuthor
+                MenuMethods.RemoveAuthor.Run();
                 break;
             case 6:
                 Console.WriteLine("RemoveBook selected.");
-                // Add logic for RemoveBook
+                MenuMethods.RemoveBook.Run();
                 break;
             case 7:
                 Console.WriteLine("RemoveLoan selected.");
-                // Add logic for RemoveLoan
+                MenuMethods.RemoveLoan.Run();
                 break;
             case 8:
-                Console.WriteLine("UpdateBook selected.");
+                Console.WriteLine("UpdateAuthor selected.");
                 // Add logic for UpdateBook
                 break;
             case 9:
-                Console.WriteLine("UpdateAuthor selected.");
+                Console.WriteLine("UpdateBook selected.");
                 // Add logic for UpdateAuthor
                 break;
             case 10:
                 Console.WriteLine("UpdateLoan selected.");
-                // Add logic for UpdateLoan
+                MenuMethods.UpdateLoan.Run();
                 break;
             case 11:
                 Console.WriteLine("ReadBooksAndAuthors selected.");

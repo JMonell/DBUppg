@@ -29,7 +29,7 @@ class AddBook{
                 }
             }
 
-            var book = new Book{
+            var book = new Book {
                 Title = title,
                 Publisher = publisher,
                 ReleaseDate = releaseDate
@@ -37,7 +37,6 @@ class AddBook{
                 context.Books.Add(book);   
                 context.SaveChanges();
                 System.Console.WriteLine($"book {book.Title} has been added to DataBase");
-
         }
     }
 }
