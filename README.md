@@ -11,7 +11,9 @@ ER-modell och ER-diagram
 Identifiera och beskriv vilka entiteter, attribut, och relationer som behövs för systemet. Rita ett ER-diagram som visar entiteter, relationer och attribut. Tydliggör att: En bok kan ha flera författare. En författare kan ha skrivit flera böcker (många-till-många-relation). Entiteter och relationer
 
 Bygg en databas som inkluderar följande: En tabell för böcker. En tabell för författare. En bryggtabell för att hantera många-till-många-relationen mellan böcker och författare. En tabell för att hantera utlåning av böcker.
+
 -----------------------------------------------------------------
+
 Del 2: Implementering i Entity Framework
 
 Modellklasser
@@ -22,6 +24,8 @@ Implementera funktioner för att: Skapa en ny författare. Skapa en ny bok. Läg
 Skapa funktioner för att: Lista alla böcker tillsammans med deras författare. Lista alla lånade böcker och deras återlämningsdatum. Seed-data
 
 Fyll databasen med grunddata som automatiskt läggs till när systemet körs.
+
+-----------------------------------------------------------------
 
 Del 3: Fördjupning (valfritt för Väl Godkänt)
 
