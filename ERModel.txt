@@ -6,7 +6,6 @@ Book:
 varchar(64) Title not null,
 varchar(32) publisher not null,
 Date ReleaseDate not null,
-Bool IsAvailable not null
 
 Author:
 (PK) int ID not null,
@@ -22,5 +21,9 @@ Loan:
 (Pk) int LoanID not null,
 varchar(64) BorrowerName not null,
 varchar(64) BorrowerPhoneNumber not null,
+(FK) int BookID not null,
+DateTime LoanDate not null,
+DateTime ReturnDate null
+
 
 
