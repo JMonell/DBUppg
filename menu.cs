@@ -48,15 +48,15 @@ public class Menu{
         switch (input){
             case 1:
                 Console.WriteLine("AddAuthor selected.");
-                // Add logic for AddAuthor
+                MenuMethods.AddAuthor.Run();
                 break;
             case 2:
                 Console.WriteLine("AddBook selected.");
-                // Add logic for AddBook
+                MenuMethods.AddBook.Run();
                 break;
             case 3:
                 Console.WriteLine("AddBookToAuthor selected.");
-                // Add logic for AddBookToAuthor
+                MenuMethods.AddBookToAuthor.Run();
                 break;
             case 4:
                 Console.WriteLine("AddLoan selected.");
